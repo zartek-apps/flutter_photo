@@ -360,6 +360,7 @@ class _PhotoMainPageState extends State<PhotoMainPage>
         ),
       );
       decoration = BoxDecoration(color: themeColor,shape: BoxShape.circle,
+          borderRadius: BorderRadius.circular(1.0),
           border: Border.all(
             color: Colors.white,
           )
