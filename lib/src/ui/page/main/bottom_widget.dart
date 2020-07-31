@@ -60,7 +60,7 @@ class __BottomWidgetState extends State<_BottomWidget> {
                         widget.galleryName,
                         style: textStyle.copyWith(color: options.textColor),
                       ),
-                      Icon(Icons.keyboard_arrow_down,size: 21,color: Colors.white,)
+                      Icon(Icons.keyboard_arrow_down,size: 20,color: Colors.white,)
                     ],
                   ),
                 ),
