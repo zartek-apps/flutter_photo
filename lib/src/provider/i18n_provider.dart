@@ -88,7 +88,7 @@ class ENProvider extends I18nProvider {
 
   @override
   String getTitleText(Options options) {
-    return "Image Picker";
+    return "Select Image/Video";
   }
 
   @override
@@ -98,7 +98,7 @@ class ENProvider extends I18nProvider {
 
   @override
   String getSureText(Options options, int currentCount) {
-    return "Save ($currentCount/${options.maxSelected})";
+    return "Next ($currentCount/${options.maxSelected})";
   }
 
   @override

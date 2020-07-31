@@ -123,7 +123,7 @@ class _PhotoMainPageState extends State<PhotoMainPage>
           appBar: AppBar(
             leading: IconButton(
               icon: Icon(
-                Icons.close,
+                Icons.arrow_back,
                 color: options.textColor,
               ),
               onPressed: _cancel,
@@ -381,7 +381,7 @@ class _PhotoMainPageState extends State<PhotoMainPage>
   }
 
   void _onGalleryChange(AssetPathEntity assetPathEntity) async {
-    // _currentPath = assetPathEntity;
+     currentPath = assetPathEntity;
 
     // _currentPath.assetList.then((v) async {
     //   _sortAssetList(v);
