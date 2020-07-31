@@ -42,7 +42,9 @@ class _ChangeGalleryDialogState extends State<ChangeGalleryDialog> {
 
     return FlatButton(
       child: ListTile(
-        title: Text("$text (${entity.assetCount})"),
+        title: Text("$text (${entity.assetCount})",style: TextStyle(
+            color: Colors.white
+        ),),
       ),
       onPressed: () {
         Navigator.pop(context, entity);
