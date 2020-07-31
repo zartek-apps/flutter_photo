@@ -54,9 +54,14 @@ class __BottomWidgetState extends State<_BottomWidget> {
                   alignment: Alignment.center,
                   height: 44.0,
                   padding: textPadding,
-                  child: Text(
-                    widget.galleryName,
-                    style: textStyle.copyWith(color: options.textColor),
+                  child: Row(
+                    children: <Widget>[
+                      Text(
+                        widget.galleryName,
+                        style: textStyle.copyWith(color: options.textColor),
+                      ),
+                      Icon(Icons.keyboard_arrow_down,size: 20,color: Colors.white,)
+                    ],
                   ),
                 ),
               ),
