@@ -332,7 +332,7 @@ class _PhotoMainPageState extends State<PhotoMainPage>
   Widget _buildSelected(AssetEntity entity) {
     var currentSelected = containsEntity(entity);
     return Center(
-      child: Positioned(
+      child: Container(
         width: 36.0,
         height: 36.0,
         child: GestureDetector(
@@ -368,7 +368,7 @@ class _PhotoMainPageState extends State<PhotoMainPage>
       decoration = BoxDecoration(
         borderRadius: BorderRadius.circular(1.0),
         border: Border.all(
-          color: themeColor,
+          color: Colors.transparent,
         ),
       );
     }
