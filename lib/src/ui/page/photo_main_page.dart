@@ -331,16 +331,17 @@ class _PhotoMainPageState extends State<PhotoMainPage>
 
   Widget _buildSelected(AssetEntity entity) {
     var currentSelected = containsEntity(entity);
-    return Positioned(
-      right: 0.0,
-      width: 36.0,
-      height: 36.0,
-      child: GestureDetector(
-        onTap: () {
-          changeCheck(!currentSelected, entity);
-        },
-        behavior: HitTestBehavior.translucent,
-        child: _buildText(entity),
+    return Center(
+      child: Positioned(
+        width: 36.0,
+        height: 36.0,
+        child: GestureDetector(
+          onTap: () {
+            changeCheck(!currentSelected, entity);
+          },
+          behavior: HitTestBehavior.translucent,
+          child: _buildText(entity),
+        ),
       ),
     );
   }
@@ -358,7 +359,11 @@ class _PhotoMainPageState extends State<PhotoMainPage>
           color: options.textColor,
         ),
       );
-      decoration = BoxDecoration(color: themeColor);
+      decoration = BoxDecoration(color: themeColor,shape: BoxShape.circle,
+          border: Border.all(
+            color: Colors.white,
+          )
+      );
     } else {
       decoration = BoxDecoration(
         borderRadius: BorderRadius.circular(1.0),
