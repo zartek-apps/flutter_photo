@@ -370,7 +370,7 @@ class _PhotoMainPageState extends State<PhotoMainPage>
       );
     }
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(1.0),
       child: AnimatedContainer(
         duration: Duration(milliseconds: 300),
         decoration: decoration,
