@@ -363,10 +363,10 @@ class _PhotoMainPageState extends State<PhotoMainPage>
       );
     } else {
       decoration = BoxDecoration(
-        borderRadius: BorderRadius.circular(1.0),
-        border: Border.all(
-          color: Colors.transparent,
-        ),
+//        borderRadius: BorderRadius.circular(1.0),
+//        border: Border.all(
+//          color: Colors.transparent,
+//        ),
       );
     }
     return Padding(
