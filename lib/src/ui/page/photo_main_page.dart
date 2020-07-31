@@ -268,6 +268,9 @@ class _PhotoMainPageState extends State<PhotoMainPage>
       color: options.dividerColor,
       child: GridView.builder(
         controller: scrollController,
+        physics: AlwaysScrollableScrollPhysics(
+          parent: BouncingScrollPhysics()
+        ),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: options.rowCount,
           childAspectRatio: options.itemRadio,
@@ -290,7 +293,11 @@ class _PhotoMainPageState extends State<PhotoMainPage>
     var data = list[index];
     return RepaintBoundary(
       child: GestureDetector(
-        onTap: () => _onItemClick(data, index),
+        onTap: () {
+        //  _onItemClick(data, index)
+          var currentSelected = containsEntity(data);
+          changeCheck(!currentSelected, data);
+        },
         child: Stack(
           children: <Widget>[
             ImageItem(
